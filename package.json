@@ -1,0 +1,39 @@
+{
+  "name": "ble-attendance-pro",
+  "version": "1.0.0",
+  "description": "Production-ready BLE Beacon Smart Attendance System with anti-proxy security measures",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd student-web && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd student-web && npm run build",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd student-web && npm test",
+    "test:backend": "cd backend && npm test",
+    "install:all": "npm install && cd student-web && npm install && cd ../backend && npm install",
+    "start:prod": "cd backend && npm start"
+  },
+  "keywords": [
+    "attendance",
+    "bluetooth",
+    "beacon",
+    "security",
+    "anti-proxy",
+    "education",
+    "smart-system"
+  ],
+  "author": "BLE Attendance Pro Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devSayanDeb/ble-attendance-pro.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
